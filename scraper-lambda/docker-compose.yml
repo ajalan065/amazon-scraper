@@ -1,0 +1,9 @@
+version: '2'
+services:
+  lambda:
+    build: .
+    volumes:
+      - .:/var/task
+    network_mode: arpit
+  localstack:
+    image: localstack/localstack:latest
